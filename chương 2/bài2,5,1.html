@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Trang đăng kí thành viên</title>
+    <style>
+#txtHoten{
+    color:#111111;
+    background-color:#CCCCCC;
+    border:1px solid:#996633;
+    width:300px;
+}
+#txtUserName{
+    color:#111111;
+    background-color:#CCCCCC;
+    border:1px solid:#996633;
+    width:300px;
+}
+#txtPass{
+    color:#111111;
+    background-color:#CCCCCC;
+    border:1px solid:#996633;
+    width:300px;
+}
+#txtRepass{
+    color:#111111;
+    background-color:#CCCCCC;
+    border:1px solid:#996633;
+    width:300px;
+}
+#txtSoThich{
+    color:#111111;
+    background-color:#CCCCCC;
+    border:1px solid:#996633;
+    width:300px;
+}
+#fHinh{
+    color:#111111;
+    background-color:#CCCCCC;
+    border:1px solid:#996633;
+    width:300px;
+}
+#cboNgheNghiep{
+    color:#111111;
+    background-color:#CCCCCC;
+    border:1px solid:#996633;
+    width:300px;
+}
+form table{
+border: 5px groove #993366;
+background-color:#FFDDDD;
+color: #003399;
+box-shadow:1px 1px;
+border-radius: 10px 10px;
+text-shadow: 0px 5px 5px #999999;
+}
+form table td{
+     border:1px solid #CC9999;
+}
+ form table{
+     margin:0px auto;
+ }
+</style>
+</head>
+<body>
+     <form>
+   <table border="1" width="500" cellpadding="4" cellspacing="0">
+   <caption align="top">Đăng kí thành viên CLB yêu nhạc</caption> 
+   <tr>
+   <td>Họ tên</td>
+   <td><input type="text" id="txtHoten" name="hoten" placeholder=""></td>
+ </tr>
+   <tr><td>Tên dăng nhập</td>
+   <td><input type="text" id="txtUserName" name="UserName" placeholder=""></td>
+   </tr>
+   <tr><td>Mật Khẩu</td>
+   <td><input type="Password" id="txtPass" name="pass" placeholder=""></td>
+   </tr>
+   <tr><td>Gõ lại Mật Khẩu</td>
+    <td><input type="Password" id="txtRepass" name="Repass" placeholder=""></td>
+   </tr>
+   <tr><td>Giới Tính</td>
+   <td>
+  <input type="radio" name="gioitinh" value="0" checked> Nữ
+  <input type="radio" name="gioitinh" value="0" checked> Nam
+    </td>
+   </tr>
+   <tr><td>Thành Phố</td>
+   <td><input list="lstthanhpho">
+     <datalist id="lstthanhpho">
+          <option value="Hà Nội">
+          <option value="Huế">
+          <option value="Đà Nẵng">
+          <option value="Quy Nhơn">
+          <option value="Phan Thiết" >
+          <option value="TP.Hồ Chí Minh">
+          <option value="Cần Thơ">
+   </td></tr>
+   <tr><td>Ngoại Ngữ</td>
+   <td>
+   <input id="chkAnh" type="checkbox"/>
+        <label for="chkAnh">Anh văn</label>
+   <input id="chkPhap"type="checkbox"/>
+        <label for="chkPhap">Pháp văn</label>
+   <input id="chkHoa"type="checkbox"/>
+        <label for="chkHoa">Hoa văn</label>
+        </td>
+   </tr>
+   <tr><td>Nghề nghiệp</td>
+  <td>
+   <select id="cboNgheNghiep">
+        <option value="0">Bạn làm nghề gì</option>
+        <option value="1">Học sinh-Sinh viên</option>
+        <option value="2">Giáo viên</option>
+        <option value="3">Nhân viên</option>
+   </select>
+   </td>
+   </tr>
+   <tr><td>Hình</td>
+   <td><input type="file" id="fHinh"/></td></tr>
+   <tr>
+   <td>Độ tuổi trung bình</td>
+   <td>
+   <input type="number" id="age" name="age" min="18" max="45" value="20" required>
+</td>
+   </tr>
+   <tr><td>Sở thích</td>
+   <td>
+   <textarea id="txtSoThich" cols="20" row="5">
+   </textarea>
+   </td></tr>
+   <tr>
+     <td colspan="2" align="center">
+     <input type="submit" id="btDangKy" value="Đăng Ký"/>
+     <input type="reset" id="btnXoa" value="làm lại"/>
+     <input type="Hidden" name="NgayDangKy" value="03/23/2023"
+     </td>
+   </tr>
+   </form>
+</body
+</html>
